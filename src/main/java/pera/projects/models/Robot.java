@@ -13,10 +13,6 @@ public class Robot {
         return distance < this.radius + other.radius;
     }
 
-    public boolean isOutOfBounds(double minX, double minY, double maxX, double maxY) {
-        return x - radius < minX || y - radius < minY || x + radius > maxX || y + radius > maxY;
-    }
-
     public double getX() {
         return x;
     }

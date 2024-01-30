@@ -24,33 +24,32 @@ public class HexagonalLatticePacking {
         List<Robot> robots = new ArrayList<>();
         Random random = new Random();
 
-        // Place the first robot randomly
-        double x0 = random.nextDouble() * (n - 2 * r) + r;
-        double y0 = random.nextDouble() * (n - 2 * r) + r;
-        robots.add(new Robot(x0, y0, r));
+        while (robots.size() < p) {
+            double x = random.nextDouble() * (n - 2 * r) + r;
+            double y = random.nextDouble() * (n - 2 * r) + r;
 
-        // Place the remaining robots using hexagonal lattice packing
-        int k = 1;
-        double size = 2 * r * Math.sqrt(3);
-        double xOffset = size * 1.5;
-        double yOffset = size * Math.sqrt(3);
+            Robot newRobot = new Robot(x, y, r);
 
-        for (int i = 0; i < n / size; i++) {
-            for (int j = 0; j < n / size; j++) {
-                double x = i % 2 == 0 ? j * xOffset : j * xOffset + xOffset / 2;
-                double y = i * yOffset;
-
-                // Skip the randomly placed robot
-                if (k < p) {
-                    Robot newRobot = new Robot(x, y, r);
-                    if (!newRobot.isOutOfBounds(r, r, n - r, n - r)) {
-                        robots.add(newRobot);
-                        k++;
-                    }
-                }
+            if (isValidPlacement(newRobot, robots, n)) {
+                robots.add(newRobot);
             }
         }
 
         return robots;
+    }
+
+    private static boolean isValidPlacement(Robot newRobot, List<Robot> robots, int gridSize) {
+        if ((newRobot.getX() - newRobot.getRadius()) < 0 || (newRobot.getX() + newRobot.getRadius()) > gridSize ||
+                (newRobot.getY() - newRobot.getRadius()) < 0 || (newRobot.getY() + newRobot.getRadius()) > gridSize) {
+            return false; // Check if the robot intersects with the grid boundaries
+        }
+
+        for (Robot robot : robots) {
+            if (robot.intersects(newRobot)) {
+                return false; // Check if the robot intersects with any existing robot
+            }
+        }
+
+        return true;
     }
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a66c2047-a57b-4020-8415-547ce2e4e98d" name="Changes" comment="placement algorithms - hexagonal packing">
+    <list default="true" id="a66c2047-a57b-4020-8415-547ce2e4e98d" name="Changes" comment="placement algorithms - hexagonal packing - updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pera/projects/algos/placement/HexagonalLatticePacking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pera/projects/algos/placement/HexagonalLatticePacking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pera/projects/models/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pera/projects/models/Robot.java" afterDir="false" />
@@ -156,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706630568239</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="placement algorithms - hexagonal packing - updated">
+      <option name="closed" value="true" />
+      <created>1706630986554</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706630986554</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +187,7 @@
     <MESSAGE value="test1 - maximum area coverage&#10;&#10;case 1" />
     <MESSAGE value="test1 - maximum area coverage&#10;&#10;case 2" />
     <MESSAGE value="placement algorithms - hexagonal packing" />
-    <option name="LAST_COMMIT_MESSAGE" value="placement algorithms - hexagonal packing" />
+    <MESSAGE value="placement algorithms - hexagonal packing - updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="placement algorithms - hexagonal packing - updated" />
   </component>
 </project>
