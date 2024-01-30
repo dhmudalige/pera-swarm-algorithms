@@ -9,7 +9,7 @@ import java.util.Random;
 public class HexagonalLatticePacking {
     public static void main(String[] args) {
         int n = 10; // Size of the grid
-        int p = 5; // Number of robots
+        int p = 3; // Number of robots
         double r = 2.0; // Radius of the robots
 
         List<Robot> robots = placeCircles(n, p, r);
@@ -24,7 +24,7 @@ public class HexagonalLatticePacking {
         List<Robot> robots = new ArrayList<>();
         Random random = new Random();
 
-        // Place the first circle randomly
+        // Place the first robot randomly
         double x0 = random.nextDouble() * (n - 2 * r) + r;
         double y0 = random.nextDouble() * (n - 2 * r) + r;
         robots.add(new Robot(x0, y0, r));
@@ -40,10 +40,13 @@ public class HexagonalLatticePacking {
                 double x = i % 2 == 0 ? j * xOffset : j * xOffset + xOffset / 2;
                 double y = i * yOffset;
 
-                // Skip the randomly placed circle
+                // Skip the randomly placed robot
                 if (k < p) {
-                    robots.add(new Robot(x, y, r));
-                    k++;
+                    Robot newRobot = new Robot(x, y, r);
+                    if (!newRobot.isOutOfBounds(r, r, n - r, n - r)) {
+                        robots.add(newRobot);
+                        k++;
+                    }
                 }
             }
         }
