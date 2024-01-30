@@ -4,19 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a66c2047-a57b-4020-8415-547ce2e4e98d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pera/projects/Main.java" afterDir="false" />
+    <list default="true" id="a66c2047-a57b-4020-8415-547ce2e4e98d" name="Changes" comment="test1 - maximum area coverage&#10;&#10;case 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pera/projects/algos/placement/RandomPlacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pera/projects/CirclePlacement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pera/projects/models/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pera/projects/models/Robot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +37,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CirclePlacement.executor": "Run",
+    "Application.HexagonalLatticePacking.executor": "Run",
+    "Application.RandomPlacement.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -48,13 +54,34 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="CirclePlacement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pera.projects.CirclePlacement" />
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pera.projects.models" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pera.projects.algos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RandomPlacement">
+    <configuration name="HexagonalLatticePacking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pera.projects.algos.placement.HexagonalLatticePacking" />
       <module name="PeraSwarmAlgorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pera.projects.*" />
+          <option name="PATTERN" value="pera.projects.algos.placement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomPlacement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pera.projects.algos.placement.RandomPlacement" />
+      <module name="PeraSwarmAlgorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pera.projects.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,7 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CirclePlacement" />
+        <item itemvalue="Application.RandomPlacement" />
+        <item itemvalue="Application.HexagonalLatticePacking" />
       </list>
     </recent_temporary>
   </component>
@@ -76,11 +104,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706624953493</updated>
-      <workItem from="1706624954544" duration="979000" />
+      <workItem from="1706624954544" duration="4502000" />
     </task>
+    <task id="LOCAL-00001" summary="initialized the project">
+      <option name="closed" value="true" />
+      <created>1706626268906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706626268906</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test1 - maximum area coverage">
+      <option name="closed" value="true" />
+      <created>1706626314675</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706626314675</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test1 - maximum area coverage&#10;&#10;case 1">
+      <option name="closed" value="true" />
+      <created>1706627307021</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706627307021</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test1 - maximum area coverage&#10;&#10;case 2">
+      <option name="closed" value="true" />
+      <created>1706627762945</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706627762945</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initialized the project" />
+    <MESSAGE value="test1 - maximum area coverage" />
+    <MESSAGE value="test1 - maximum area coverage&#10;&#10;case 1" />
+    <MESSAGE value="test1 - maximum area coverage&#10;&#10;case 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test1 - maximum area coverage&#10;&#10;case 2" />
   </component>
 </project>
